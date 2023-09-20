@@ -6,39 +6,55 @@
     <title>Document</title>
 
     <style>
-        label {
-            display: block;
+        .inline-radios {
+            display: flex;
+        }
+        .container {
+            display:flex;
+            flex-flow: column wrap; 
         }
     </style>
     <script defer src="index.js"></script>
 </head>
 <body>
     
-    <label for="interval">Interval</label>
-    <select id="interval">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-    </select>
+    <div class="container">
+        <div>
+            <label for="interval">Interval</label>
+            <select id="interval" data-keep></select>
+        </div>
+        <div class="inline-radios">
+            <div>
+                <input type="radio" name="mode" value="asc" id="asc" data-keep>
+                <label for="asc">Asc</label>
+            </div>
+            <div>
+                <input type="radio" name="mode" value="desc" id="desc" data-keep>
+                <label for="desc">Desc</label>
+            </div>
+            <div>
+                <input type="radio" name="mode" value="sabay" id="sabay" data-keep>
+                <label for="sabay">Unison</label>
+            </div>
+        </div>
+        <div id="note_name"></div>
+        
+        <div>
+            <label for="timbre1">Timbre 1</label>
+            <select id="timbre1" data-keep></select>
+            <input type="range" name="vel_timbre1" min="0" max="127" id="vel_timbre1" data-keep>
+        </div>
+        <div>
+            <label for="timbre2">Timbre 2</label>
+            <select id="timbre2" data-keep></select>
+            <input type="range" name="vel_timbre2" min="0" max="127" id="vel_timbre2" data-keep>
+        </div>
+        <button id="play">Play</button>
+    </div>
 
-    <button id="play">Play/Stop</button>
-
-    <option name="mode" value="asc">asc</option>
-    <option name="mode" value="desc">desc</option>
-    <option name="mode" value="sabay">sabay</option>
-
-    <div id="note_name"></div>
 
     
 </body>
 <script src="./js/webaudio-tinysynth.min.js"></script>
+<script src="./programs.js"></script>
 </html>

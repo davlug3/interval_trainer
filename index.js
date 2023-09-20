@@ -2,30 +2,81 @@ window.addEventListener('load', async function () {
     
   const synth = new WebAudioTinySynth({quality:0, useReverb:0});
   const audioContext = synth.getAudioContext()
+  const LS_KEY = "intervals"
 
-
-  const _fetch = await fetch("/notes.json")
-  const notes = await _fetch.json()
+  const _fetch1 = await fetch("/notes.json")
+  const _fetch2 = await fetch("/intervals.json")
+  const notes = await _fetch1.json()
+  const intervals = await _fetch2.json()
   
   const interval = 3000
   const noteDuration = 3000
   const ch = 1
 
   let interval_obj = undefined
-
-
-  console.log("notes: ", notes);
-
   const btn_play = document.getElementById("play")
+  const sel_interval = document.getElementById("interval")
+  const el_note_name = document.getElementById("note_name")
+  const sel_timbre1 = document.getElementById("timbre1")
+  const sel_timbre2 = document.getElementById("timbre2")
+  const vel_timbre1 = document.getElementById("vel_timbre1")
+  const vel_timbre2 = document.getElementById("vel_timbre2")
+
+
+  intervals.forEach((element, index) => {
+    const el_option = document.createElement("option")
+    el_option.setAttribute("value", index)
+    el_option.innerHTML = element
+    sel_interval.appendChild(el_option)
+  });
+
+  timbres.forEach((element, index) => {
+    const el_option = document.createElement("option")
+    el_option.setAttribute("value", index)
+    el_option.innerHTML = element.name
+    const el_option2 = el_option.cloneNode(true)
+    sel_timbre1.appendChild(el_option)
+    sel_timbre2.appendChild(el_option2)
+  })
+
+  btn_play.innerHTML = "Play"
+
+
+
   btn_play.addEventListener("click", (x, y)  => {
       if (interval_obj){
-          console.log("clearing interval: ", interval_obj);
           clearInterval(interval_obj)
           interval_obj = undefined
-          console.log("cleared");
+          btn_play.innerHTML = "Play" 
       }
-      else
+      else{
           play(interval)
+          btn_play.innerHTML = "Stop"
+        }
+  })
+
+
+  const el_keep = document.querySelectorAll("[data-keep]") 
+  let from_localStorage = JSON.parse(localStorage.getItem(LS_KEY) ?? "{}")
+  console.log("from_localStorage: ", from_localStorage);
+  
+
+  el_keep.forEach(x=>{
+    x.addEventListener("change", function (event) {
+      from_localStorage = JSON.parse(localStorage.getItem(LS_KEY) ?? "{}")
+      const id = event.target.getAttribute('id')
+      const val = event.target.value
+
+      const setObj = {...from_localStorage}
+      setObj[id] = val
+
+      localStorage.setItem(LS_KEY, JSON.stringify(setObj))
+      console.log("from_localStorage: ", from_localStorage);
+    })
+
+    const temp = from_localStorage[x.getAttribute('id')]
+
+    if (temp) x.value = temp
   })
 
 
@@ -36,9 +87,15 @@ window.addEventListener('load', async function () {
 
       function interval_callback () {
           const random = Math.ceil(randn_bm_minmax(0,1,1) * notes.length)
-          const musical_interval = parseInt(document.getElementById("interval").value)
-          const el_note_name = document.getElementById("note_name")
+          const musical_interval = parseInt(sel_interval.value)
 
+          synth.setPan(ch,0)
+          synth.setPan(ch+1,127)
+          synth.setProgram(ch, sel_timbre1.value)
+          synth.setProgram(ch+1, sel_timbre2.value)
+
+          synth.setTimbre(0, sel_timbre1.value, program0[sel_timbre1.value])
+          synth.setTimbre(0, sel_timbre2.value, program1[sel_timbre2.value])
           console.log("random: ", random);
 
 
@@ -48,8 +105,8 @@ window.addEventListener('load', async function () {
 
 
 
-          synth.noteOn(ch, note1.midi, 127, 0)
-          synth.noteOn(ch, note2.midi, 127, 0)
+          synth.noteOn(ch, note1.midi, vel_timbre1.value , 0)
+          synth.noteOn(ch+1, note2.midi, vel_timbre2.value, 0)
 
           setTimeout(()=> {
               synth.noteOff(ch, note1.midi)
