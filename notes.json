@@ -1,0 +1,758 @@
+[
+    {
+      "piano_key": 108,
+      "midi": 119,
+      "scientific": "B8",
+      "n": 99,
+      "freq": 7902.133
+    },
+    {
+      "piano_key": 107,
+      "midi": 118,
+      "scientific": "A♯8/B♭8",
+      "n": 98,
+      "freq": 7458.62
+    },
+    {
+      "piano_key": 106,
+      "midi": 117,
+      "scientific": "A8",
+      "n": 97,
+      "freq": 7040
+    },
+    {
+      "piano_key": 105,
+      "midi": 116,
+      "scientific": "G♯8/A♭8",
+      "n": 96,
+      "freq": 6644.875
+    },
+    {
+      "piano_key": 104,
+      "midi": 115,
+      "scientific": "G8",
+      "n": 95,
+      "freq": 6271.927
+    },
+    {
+      "piano_key": 103,
+      "midi": 114,
+      "scientific": "F♯8/G♭8",
+      "n": 94,
+      "freq": 5919.911
+    },
+    {
+      "piano_key": 102,
+      "midi": 113,
+      "scientific": "F8",
+      "n": 93,
+      "freq": 5587.652
+    },
+    {
+      "piano_key": 101,
+      "midi": 112,
+      "scientific": "E8",
+      "n": 92,
+      "freq": 5274.041
+    },
+    {
+      "piano_key": 100,
+      "midi": 111,
+      "scientific": "D♯8/E♭8",
+      "n": 91,
+      "freq": 4978.032
+    },
+    {
+      "piano_key": 99,
+      "midi": 110,
+      "scientific": "D8",
+      "n": 90,
+      "freq": 4698.636
+    },
+    {
+      "piano_key": 98,
+      "midi": 109,
+      "scientific": "C♯8/D♭8",
+      "n": 89,
+      "freq": 4434.922
+    },
+    {
+      "piano_key": 88,
+      "midi": 108,
+      "scientific": "C8 Eighth octave",
+      "n": 88,
+      "freq": 4186.009
+    },
+    {
+      "piano_key": 87,
+      "midi": 107,
+      "scientific": "B7",
+      "n": 87,
+      "freq": 3951.066
+    },
+    {
+      "piano_key": 86,
+      "midi": 106,
+      "scientific": "A♯7/B♭7",
+      "n": 86,
+      "freq": 3729.31
+    },
+    {
+      "piano_key": 85,
+      "midi": 105,
+      "scientific": "A7",
+      "n": 85,
+      "freq": 3520
+    },
+    {
+      "piano_key": 84,
+      "midi": 104,
+      "scientific": "G♯7/A♭7",
+      "n": 84,
+      "freq": 3322.438
+    },
+    {
+      "piano_key": 83,
+      "midi": 103,
+      "scientific": "G7",
+      "n": 83,
+      "freq": 3135.963
+    },
+    {
+      "piano_key": 82,
+      "midi": 102,
+      "scientific": "F♯7/G♭7",
+      "n": 82,
+      "freq": 2959.955
+    },
+    {
+      "piano_key": 81,
+      "midi": 101,
+      "scientific": "F7",
+      "n": 81,
+      "freq": 2793.826
+    },
+    {
+      "piano_key": 80,
+      "midi": 100,
+      "scientific": "E7",
+      "n": 80,
+      "freq": 2637.02
+    },
+    {
+      "piano_key": 79,
+      "midi": 99,
+      "scientific": "D♯7/E♭7",
+      "n": 79,
+      "freq": 2489.016
+    },
+    {
+      "piano_key": 78,
+      "midi": 98,
+      "scientific": "D7",
+      "n": 78,
+      "freq": 2349.318
+    },
+    {
+      "piano_key": 77,
+      "midi": 97,
+      "scientific": "C♯7/D♭7",
+      "n": 77,
+      "freq": 2217.461
+    },
+    {
+      "piano_key": 76,
+      "midi": 96,
+      "scientific": "C7 Double high C",
+      "n": 76,
+      "freq": 2093.005
+    },
+    {
+      "piano_key": 75,
+      "midi": 95,
+      "scientific": "B6",
+      "n": 75,
+      "freq": 1975.533
+    },
+    {
+      "piano_key": 74,
+      "midi": 94,
+      "scientific": "A♯6/B♭6",
+      "n": 74,
+      "freq": 1864.655
+    },
+    {
+      "piano_key": 73,
+      "midi": 93,
+      "scientific": "A6",
+      "n": 73,
+      "freq": 1760
+    },
+    {
+      "piano_key": 72,
+      "midi": 92,
+      "scientific": "G♯6/A♭6",
+      "n": 72,
+      "freq": 1661.219
+    },
+    {
+      "piano_key": 71,
+      "midi": 91,
+      "scientific": "G6",
+      "n": 71,
+      "freq": 1567.982
+    },
+    {
+      "piano_key": 70,
+      "midi": 90,
+      "scientific": "F♯6/G♭6",
+      "n": 70,
+      "freq": 1479.978
+    },
+    {
+      "piano_key": 69,
+      "midi": 89,
+      "scientific": "F6",
+      "n": 69,
+      "freq": 1396.913
+    },
+    {
+      "piano_key": 68,
+      "midi": 88,
+      "scientific": "E6",
+      "n": 68,
+      "freq": 1318.51
+    },
+    {
+      "piano_key": 67,
+      "midi": 87,
+      "scientific": "D♯6/E♭6",
+      "n": 67,
+      "freq": 1244.508
+    },
+    {
+      "piano_key": 66,
+      "midi": 86,
+      "scientific": "D6",
+      "n": 66,
+      "freq": 1174.659
+    },
+    {
+      "piano_key": 65,
+      "midi": 85,
+      "scientific": "C♯6/D♭6",
+      "n": 65,
+      "freq": 1108.731
+    },
+    {
+      "piano_key": 64,
+      "midi": 84,
+      "scientific": "C6 Soprano C (High C)",
+      "n": 64,
+      "freq": 1046.502
+    },
+    {
+      "piano_key": 63,
+      "midi": 83,
+      "scientific": "B5",
+      "n": 63,
+      "freq": 987.7666
+    },
+    {
+      "piano_key": 62,
+      "midi": 82,
+      "scientific": "A♯5/B♭5",
+      "n": 62,
+      "freq": 932.3275
+    },
+    {
+      "piano_key": 61,
+      "midi": 81,
+      "scientific": "A5",
+      "n": 61,
+      "freq": 880
+    },
+    {
+      "piano_key": 60,
+      "midi": 80,
+      "scientific": "G♯5/A♭5",
+      "n": 60,
+      "freq": 830.6094
+    },
+    {
+      "piano_key": 59,
+      "midi": 79,
+      "scientific": "G5",
+      "n": 59,
+      "freq": 783.9909
+    },
+    {
+      "piano_key": 58,
+      "midi": 78,
+      "scientific": "F♯5/G♭5",
+      "n": 58,
+      "freq": 739.9888
+    },
+    {
+      "piano_key": 57,
+      "midi": 77,
+      "scientific": "F5",
+      "n": 57,
+      "freq": 698.4565
+    },
+    {
+      "piano_key": 56,
+      "midi": 76,
+      "scientific": "E5",
+      "n": 56,
+      "freq": 659.2551
+    },
+    {
+      "piano_key": 55,
+      "midi": 75,
+      "scientific": "D♯5/E♭5",
+      "n": 55,
+      "freq": 622.254
+    },
+    {
+      "piano_key": 54,
+      "midi": 74,
+      "scientific": "D5",
+      "n": 54,
+      "freq": 587.3295
+    },
+    {
+      "piano_key": 53,
+      "midi": 73,
+      "scientific": "C♯5/D♭5",
+      "n": 53,
+      "freq": 554.3653
+    },
+    {
+      "piano_key": 52,
+      "midi": 72,
+      "scientific": "C5 Tenor C",
+      "n": 52,
+      "freq": 523.2511
+    },
+    {
+      "piano_key": 51,
+      "midi": 71,
+      "scientific": "B4",
+      "n": 51,
+      "freq": 493.8833
+    },
+    {
+      "piano_key": 50,
+      "midi": 70,
+      "scientific": "A♯4/B♭4",
+      "n": 50,
+      "freq": 466.1638
+    },
+    {
+      "piano_key": 49,
+      "midi": 69,
+      "scientific": "A4 A440",
+      "n": 49,
+      "freq": 440
+    },
+    {
+      "piano_key": 48,
+      "midi": 68,
+      "scientific": "G♯4/A♭4",
+      "n": 48,
+      "freq": 415.3047
+    },
+    {
+      "piano_key": 47,
+      "midi": 67,
+      "scientific": "G4",
+      "n": 47,
+      "freq": 391.9954
+    },
+    {
+      "piano_key": 46,
+      "midi": 66,
+      "scientific": "F♯4/G♭4",
+      "n": 46,
+      "freq": 369.9944
+    },
+    {
+      "piano_key": 45,
+      "midi": 65,
+      "scientific": "F4",
+      "n": 45,
+      "freq": 349.2282
+    },
+    {
+      "piano_key": 44,
+      "midi": 64,
+      "scientific": "E4",
+      "n": 44,
+      "freq": 329.6276
+    },
+    {
+      "piano_key": 43,
+      "midi": 63,
+      "scientific": "D♯4/E♭4",
+      "n": 43,
+      "freq": 311.127
+    },
+    {
+      "piano_key": 42,
+      "midi": 62,
+      "scientific": "D4",
+      "n": 42,
+      "freq": 293.6648
+    },
+    {
+      "piano_key": 41,
+      "midi": 61,
+      "scientific": "C♯4/D♭4",
+      "n": 41,
+      "freq": 277.1826
+    },
+    {
+      "piano_key": 40,
+      "midi": 60,
+      "scientific": "C4 Middle C",
+      "n": 40,
+      "freq": 261.6256
+    },
+    {
+      "piano_key": 39,
+      "midi": 59,
+      "scientific": "B3",
+      "n": 39,
+      "freq": 246.9417
+    },
+    {
+      "piano_key": 38,
+      "midi": 58,
+      "scientific": "A♯3/B♭3",
+      "n": 38,
+      "freq": 233.0819
+    },
+    {
+      "piano_key": 37,
+      "midi": 57,
+      "scientific": "A3",
+      "n": 37,
+      "freq": 220
+    },
+    {
+      "piano_key": 36,
+      "midi": 56,
+      "scientific": "G♯3/A♭3",
+      "n": 36,
+      "freq": 207.6523
+    },
+    {
+      "piano_key": 35,
+      "midi": 55,
+      "scientific": "G3",
+      "n": 35,
+      "freq": 195.9977
+    },
+    {
+      "piano_key": 34,
+      "midi": 54,
+      "scientific": "F♯3/G♭3",
+      "n": 34,
+      "freq": 184.9972
+    },
+    {
+      "piano_key": 33,
+      "midi": 53,
+      "scientific": "F3",
+      "n": 33,
+      "freq": 174.6141
+    },
+    {
+      "piano_key": 32,
+      "midi": 52,
+      "scientific": "E3",
+      "n": 32,
+      "freq": 164.8138
+    },
+    {
+      "piano_key": 31,
+      "midi": 51,
+      "scientific": "D♯3/E♭3",
+      "n": 31,
+      "freq": 155.5635
+    },
+    {
+      "piano_key": 30,
+      "midi": 50,
+      "scientific": "D3",
+      "n": 30,
+      "freq": 146.8324
+    },
+    {
+      "piano_key": 29,
+      "midi": 49,
+      "scientific": "C♯3/D♭3",
+      "n": 29,
+      "freq": 138.5913
+    },
+    {
+      "piano_key": 28,
+      "midi": 48,
+      "scientific": "C3",
+      "n": 28,
+      "freq": 130.8128
+    },
+    {
+      "piano_key": 27,
+      "midi": 47,
+      "scientific": "B2",
+      "n": 27,
+      "freq": 123.4708
+    },
+    {
+      "piano_key": 26,
+      "midi": 46,
+      "scientific": "A♯2/B♭2",
+      "n": 26,
+      "freq": 116.5409
+    },
+    {
+      "piano_key": 25,
+      "midi": 45,
+      "scientific": "A2",
+      "n": 25,
+      "freq": 110
+    },
+    {
+      "piano_key": 24,
+      "midi": 44,
+      "scientific": "G♯2/A♭2",
+      "n": 24,
+      "freq": 103.8262
+    },
+    {
+      "piano_key": 23,
+      "midi": 43,
+      "scientific": "G2",
+      "n": 23,
+      "freq": 97.99886
+    },
+    {
+      "piano_key": 22,
+      "midi": 42,
+      "scientific": "F♯2/G♭2",
+      "n": 22,
+      "freq": 92.49861
+    },
+    {
+      "piano_key": 21,
+      "midi": 41,
+      "scientific": "F2",
+      "n": 21,
+      "freq": 87.30706
+    },
+    {
+      "piano_key": 20,
+      "midi": 40,
+      "scientific": "E2",
+      "n": 20,
+      "freq": 82.40689
+    },
+    {
+      "piano_key": 19,
+      "midi": 39,
+      "scientific": "D♯2/E♭2",
+      "n": 19,
+      "freq": 77.78175
+    },
+    {
+      "piano_key": 18,
+      "midi": 38,
+      "scientific": "D2",
+      "n": 18,
+      "freq": 73.41619
+    },
+    {
+      "piano_key": 17,
+      "midi": 37,
+      "scientific": "C♯2/D♭2",
+      "n": 17,
+      "freq": 69.29566
+    },
+    {
+      "piano_key": 16,
+      "midi": 36,
+      "scientific": "C2 Deep C",
+      "n": 16,
+      "freq": 65.40639
+    },
+    {
+      "piano_key": 15,
+      "midi": 35,
+      "scientific": "B1",
+      "n": 15,
+      "freq": 61.73541
+    },
+    {
+      "piano_key": 14,
+      "midi": 34,
+      "scientific": "A♯1/B♭1",
+      "n": 14,
+      "freq": 58.27047
+    },
+    {
+      "piano_key": 13,
+      "midi": 33,
+      "scientific": "A1",
+      "n": 13,
+      "freq": 55
+    },
+    {
+      "piano_key": 12,
+      "midi": 32,
+      "scientific": "G♯1/A♭1",
+      "n": 12,
+      "freq": 51.91309
+    },
+    {
+      "piano_key": 11,
+      "midi": 31,
+      "scientific": "G1",
+      "n": 11,
+      "freq": 48.99943
+    },
+    {
+      "piano_key": 10,
+      "midi": 30,
+      "scientific": "F♯1/G♭1",
+      "n": 10,
+      "freq": 46.2493
+    },
+    {
+      "piano_key": 9,
+      "midi": 29,
+      "scientific": "F1",
+      "n": 9,
+      "freq": 43.65353
+    },
+    {
+      "piano_key": 8,
+      "midi": 28,
+      "scientific": "E1",
+      "n": 8,
+      "freq": 41.20344
+    },
+    {
+      "piano_key": 7,
+      "midi": 27,
+      "scientific": "D♯1/E♭1",
+      "n": 7,
+      "freq": 38.89087
+    },
+    {
+      "piano_key": 6,
+      "midi": 26,
+      "scientific": "D1",
+      "n": 6,
+      "freq": 36.7081
+    },
+    {
+      "piano_key": 5,
+      "midi": 25,
+      "scientific": "C♯1/D♭1",
+      "n": 5,
+      "freq": 34.64783
+    },
+    {
+      "piano_key": 4,
+      "midi": 24,
+      "scientific": "C1 Pedal C",
+      "n": 4,
+      "freq": 32.7032
+    },
+    {
+      "piano_key": 3,
+      "midi": 23,
+      "scientific": "B0",
+      "n": 3,
+      "freq": 30.86771
+    },
+    {
+      "piano_key": 2,
+      "midi": 22,
+      "scientific": "A♯0/B♭0",
+      "n": 2,
+      "freq": 29.13524
+    },
+    {
+      "piano_key": 1,
+      "midi": 21,
+      "scientific": "A0",
+      "n": 1,
+      "freq": 27.5
+    },
+    {
+      "piano_key": 97,
+      "midi": 20,
+      "scientific": "G♯0/A♭0",
+      "n": 0,
+      "freq": 25.95654
+    },
+    {
+      "piano_key": 96,
+      "midi": 19,
+      "scientific": "G0",
+      "n": -1,
+      "freq": 24.49971
+    },
+    {
+      "piano_key": 95,
+      "midi": 18,
+      "scientific": "F♯0/G♭0",
+      "n": -2,
+      "freq": 23.12465
+    },
+    {
+      "piano_key": 94,
+      "midi": 17,
+      "scientific": "F0",
+      "n": -3,
+      "freq": 21.82676
+    },
+    {
+      "piano_key": 93,
+      "midi": 16,
+      "scientific": "E0",
+      "n": -4,
+      "freq": 20.60172
+    },
+    {
+      "piano_key": 92,
+      "midi": 15,
+      "scientific": "D♯0/E♭0",
+      "n": -5,
+      "freq": 19.44544
+    },
+    {
+      "piano_key": 91,
+      "midi": 14,
+      "scientific": "D0",
+      "n": -6,
+      "freq": 18.35405
+    },
+    {
+      "piano_key": 90,
+      "midi": 13,
+      "scientific": "C♯0/D♭0",
+      "n": -7,
+      "freq": 17.32391
+    },
+    {
+      "piano_key": 89,
+      "midi": 12,
+      "scientific": "C0 Double Pedal C",
+      "n": -8,
+      "freq": 16.3516
+    }
+  ]
