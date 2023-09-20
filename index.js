@@ -56,7 +56,7 @@ window.addEventListener('load', async function () {
                 synth.noteOff(ch, note2.midi)
             }, noteDuration)
 
-            el_note_name.innerHTML =`<pre>${note1.scientific} and ${note2.scientific}</pre>`
+            el_note_name.innerHTML =`<pre>${note1.sharp} and ${note2.sharp}</pre>`
 
         }
 
