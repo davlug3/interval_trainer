@@ -4,8 +4,8 @@ window.addEventListener('load', async function () {
   const audioContext = synth.getAudioContext()
   const LS_KEY = "intervals"
 
-  const _fetch1 = await fetch("/notes.json")
-  const _fetch2 = await fetch("/intervals.json")
+  const _fetch1 = await fetch("./notes.json")
+  const _fetch2 = await fetch("./intervals.json")
   const notes = await _fetch1.json()
   const intervals = await _fetch2.json()
   
@@ -66,17 +66,24 @@ window.addEventListener('load', async function () {
       from_localStorage = JSON.parse(localStorage.getItem(LS_KEY) ?? "{}")
       const id = event.target.getAttribute('id')
       const val = event.target.value
+      const checked = event.target.checked
 
       const setObj = {...from_localStorage}
+
+      if (id=='panned') 
+      setObj[id] = checked
+      else
       setObj[id] = val
 
       localStorage.setItem(LS_KEY, JSON.stringify(setObj))
-      console.log("from_localStorage: ", from_localStorage);
     })
 
     const temp = from_localStorage[x.getAttribute('id')]
 
-    if (temp) x.value = temp
+    if (temp) {
+      if (x.getAttribute("id")=='panned') x.checked = temp
+      else  x.value = temp
+    }
   })
 
 
@@ -88,9 +95,13 @@ window.addEventListener('load', async function () {
       function interval_callback () {
           const random = Math.ceil(randn_bm_minmax(0,1,1) * notes.length)
           const musical_interval = parseInt(sel_interval.value)
+          const panned = document.getElementById("panned").checked
 
-          synth.setPan(ch,0)
-          synth.setPan(ch+1,127)
+          const panL = 0
+          const panR = 254
+
+          synth.setPan(ch,panned? panL : 64)
+          synth.setPan(ch+1,panned ? panR : 64)
           synth.setProgram(ch, sel_timbre1.value)
           synth.setProgram(ch+1, sel_timbre2.value)
 
@@ -125,6 +136,13 @@ window.addEventListener('load', async function () {
 
 
 }, false);
+
+
+
+
+
+
+
 
 
 
