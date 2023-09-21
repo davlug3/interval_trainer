@@ -58,7 +58,6 @@ window.addEventListener('load', async function () {
 
   const el_keep = document.querySelectorAll("[data-keep]") 
   let from_localStorage = JSON.parse(localStorage.getItem(LS_KEY) ?? "{}")
-  console.log("from_localStorage: ", from_localStorage);
   
 
   el_keep.forEach(x=>{
@@ -107,8 +106,6 @@ window.addEventListener('load', async function () {
 
           synth.setTimbre(0, sel_timbre1.value, program0[sel_timbre1.value])
           synth.setTimbre(0, sel_timbre2.value, program1[sel_timbre2.value])
-          console.log("random: ", random);
-
 
           const note1 = notes[random]
           const note2 = notes[random-musical_interval]
@@ -124,7 +121,7 @@ window.addEventListener('load', async function () {
               synth.noteOff(ch, note2.midi)
           }, noteDuration)
 
-          el_note_name.innerHTML =`<pre>${note1.sharp} and ${note2.sharp}</pre>`
+          el_note_name.innerHTML =`${note1.sharp} and ${note2.sharp}`
 
       }
 

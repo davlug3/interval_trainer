@@ -6,54 +6,99 @@
     <title>Document</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body {
+            min-height: 100vh;
+            margin: 0px;
+        }
+
         .inline-radios {
             display: flex;
+            justify-content:space-between;
+            flex-direction: row;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            display:flex;
-            flex-flow: column wrap; 
+            max-width: 400px;
+            padding: 1em;
+            border: 1px solid #9a9a9a;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            box-shadow: 0.1em 0.1em 10px rgba(0,0,0,0.2);
+        }
+
+        input, select {
+            width: 100%;
+            border: 1px solid #707070;
+            border-radius: 5px;
+            padding: 0.2em;
+        }
+        #note_name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family:  monospace;
+            font-weight: bold;
+            font-size: large;
+            height: 3em;
+            vertical-align:middle;
         }
     </style>
     <script defer src="index.js"></script>
 </head>
 <body>
     
-    <div class="container">
-        <div>
-            <label for="interval">Interval</label>
-            <select id="interval" data-keep></select>
-        </div>
-        <div class="inline-radios">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <label for="interval">Interval</label>
+                <select id="interval" data-keep></select>
+            </div>
+            <div class="inline-radios">
+                <div>
+                    <input type="radio" name="mode" value="asc" id="asc" data-keep>
+                    <label for="asc">Asc</label>
+                </div>
+                <div>
+                    <input type="radio" name="mode" value="desc" id="desc" data-keep>
+                    <label for="desc">Desc</label>
+                </div>
+                <div>
+                    <input type="radio" name="mode" value="sabay" id="sabay" data-keep>
+                    <label for="sabay">Unison</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="pan" id="panned" data-keep>
+                    <label for="panned">Pan</label>
+                </div>
+            </div>
+            <div id="note_name"></div>
+            
             <div>
-                <input type="radio" name="mode" value="asc" id="asc" data-keep>
-                <label for="asc">Asc</label>
+                <label for="timbre1">Timbre 1</label>
+                <select id="timbre1" data-keep></select>
+                <input type="range" name="vel_timbre1" min="0" max="127" id="vel_timbre1" data-keep>
             </div>
             <div>
-                <input type="radio" name="mode" value="desc" id="desc" data-keep>
-                <label for="desc">Desc</label>
+                <label for="timbre2">Timbre 2</label>
+                <select id="timbre2" data-keep></select>
+                <input type="range" name="vel_timbre2" min="0" max="127" id="vel_timbre2" data-keep>
             </div>
-            <div>
-                <input type="radio" name="mode" value="sabay" id="sabay" data-keep>
-                <label for="sabay">Unison</label>
-            </div>
-            <div>
-                <input type="checkbox" name="pan" id="panned" data-keep>
-                <label for="panned">Pan</label>
-            </div>
+            <button id="play">Play</button>
         </div>
-        <div id="note_name"></div>
-        
-        <div>
-            <label for="timbre1">Timbre 1</label>
-            <select id="timbre1" data-keep></select>
-            <input type="range" name="vel_timbre1" min="0" max="127" id="vel_timbre1" data-keep>
-        </div>
-        <div>
-            <label for="timbre2">Timbre 2</label>
-            <select id="timbre2" data-keep></select>
-            <input type="range" name="vel_timbre2" min="0" max="127" id="vel_timbre2" data-keep>
-        </div>
-        <button id="play">Play</button>
     </div>
 
 
