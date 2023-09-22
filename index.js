@@ -1,6 +1,7 @@
 window.addEventListener('load', async function () {
     
   const synth = new WebAudioTinySynth({quality:0, useReverb:0});
+  synth.setTsMode(0)
   const audioContext = synth.getAudioContext()
   const LS_KEY = "intervals"
 
@@ -9,7 +10,7 @@ window.addEventListener('load', async function () {
   const notes = await _fetch1.json()
   const intervals = await _fetch2.json()
   
-  const interval = 3000
+  let interval = 3000
   const noteDuration = 3000
   const ch = 1
 
@@ -44,6 +45,10 @@ window.addEventListener('load', async function () {
 
 
   btn_play.addEventListener("click", (x, y)  => {
+    interval = parseFloat(document.getElementById("item_interval").value)*1000 ?? interval
+
+
+    if (interval) {
       if (interval_obj){
           clearInterval(interval_obj)
           interval_obj = undefined
@@ -53,6 +58,7 @@ window.addEventListener('load', async function () {
           play(interval)
           btn_play.innerHTML = "Stop"
         }
+    }
   })
 
 
@@ -84,6 +90,7 @@ window.addEventListener('load', async function () {
       else  x.value = temp
     }
   })
+  document.querySelector(".wrapper").style.display = 'flex'
 
 
   
@@ -95,6 +102,11 @@ window.addEventListener('load', async function () {
           const random = Math.ceil(randn_bm_minmax(0,1,1) * notes.length)
           const musical_interval = parseInt(sel_interval.value)
           const panned = document.getElementById("panned").checked
+          const note_interval = parseFloat(document.getElementById("note_interval").value) * 1000 ?? 0
+          const is_asc = document.getElementById("asc").checked
+          const is_desc = document.getElementById("desc").checked
+
+
 
           const panL = 0
           const panR = 254
@@ -107,14 +119,21 @@ window.addEventListener('load', async function () {
           synth.setTimbre(0, sel_timbre1.value, program0[sel_timbre1.value])
           synth.setTimbre(0, sel_timbre2.value, program1[sel_timbre2.value])
 
+          let i = random-musical_interval
+
+          if (is_asc) i = random-musical_interval
+          if (is_desc) i = random+musical_interval
+
           const note1 = notes[random]
-          const note2 = notes[random-musical_interval]
+          const note2 = notes[i]
 
 
 
 
           synth.noteOn(ch, note1.midi, vel_timbre1.value , 0)
-          synth.noteOn(ch+1, note2.midi, vel_timbre2.value, 0)
+          setTimeout(function () {
+            synth.noteOn(ch+1, note2.midi, vel_timbre2.value, 0)
+          }, note_interval)
 
           setTimeout(()=> {
               synth.noteOff(ch, note1.midi)

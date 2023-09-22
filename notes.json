@@ -503,10 +503,10 @@
     "piano_key": 49,
     "midi": 69,
     "": "",
-    "scientific": "A4 A440",
+    "scientific": "A4",
     "n": 49,
     "freq": 440,
-    "sharp": "A4Â A440",
+    "sharp": "A4",
     "flat": ""
   },
   {

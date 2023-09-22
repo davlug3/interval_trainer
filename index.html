@@ -23,7 +23,7 @@
         }
 
         .wrapper {
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -40,6 +40,7 @@
         }
 
         input, select {
+            display: block;
             width: 100%;
             border: 1px solid #707070;
             border-radius: 5px;
@@ -56,6 +57,7 @@
             height: 3em;
             vertical-align:middle;
         }
+        
     </style>
     <script defer src="index.js"></script>
 </head>
@@ -85,6 +87,20 @@
                     <label for="panned">Pan</label>
                 </div>
             </div>
+
+            <div class="inline-radios">
+                <div style="margin-right: 5px">
+                    <input type="number" name="note_interval" id="note_interval" data-keep style="width: 100%">
+                    <label for="note_interval">Note Interval</label>
+                </div>
+                <div style="margin-left: 5px">
+                    <input type="number" name="item_interval" id="item_interval" data-keep style="width: 100%">
+                    <label for="item_interval">Item Interval</label>
+
+                </div>
+            </div>
+
+
             <div id="note_name"></div>
             
             <div>
