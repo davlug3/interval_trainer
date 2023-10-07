@@ -1,4 +1,4 @@
-window.addEventListener('load', async function () {
+  window.addEventListener('load', async function () {
     
   const synth = new WebAudioTinySynth({quality:0, useReverb:0});
   const audioContext = synth.getAudioContext()

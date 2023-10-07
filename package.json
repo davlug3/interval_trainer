@@ -1,0 +1,19 @@
+  {
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "For testing only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davlug3/interval_trainer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davlug3/interval_trainer/issues"
+  },
+  "homepage": "https://github.com/davlug3/interval_trainer#readme"
+}
